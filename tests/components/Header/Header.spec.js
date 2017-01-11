@@ -19,9 +19,9 @@ describe('(Component) Header', () => {
   describe('Navigation links...', () => {
     it('Should render a Link to Home route', () => {
       expect(_wrapper.contains(
-        <IndexLink activeClassName='route--active' to='/'>
+        <Link activeOnlyWhenExact activeClassName='route--active' to='/'>
           Home
-        </IndexLink>
+        </Link>
       )).to.be.true
     })
 
